@@ -17,6 +17,8 @@
 
 from typing import overload, Sequence, Union, Any
 
+from PyQt5.QtCore import QObject
+
 
 # Constants.
 SIP_VERSION = ...       # type: int
@@ -25,7 +27,7 @@ SIP_VERSION_STR = ...   # type: str
 
 # The bases for SIP generated types.
 class wrappertype: ...
-class simplewrapper: ...
+simplewrapper = QObject
 class wrapper(simplewrapper): ...
 
 
