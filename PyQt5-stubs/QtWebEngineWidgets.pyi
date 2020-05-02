@@ -216,6 +216,11 @@ class QWebEnginePage(QtCore.QObject):
     FindBackward = ... # type: 'QWebEnginePage.FindFlag'
     FindCaseSensitively = ... # type: 'QWebEnginePage.FindFlag'
 
+    class LifecycleState(int): ...
+    Active = ... # type: 'QWebEnginePage.LifecycleState'
+    Frozen = ... # type: 'QWebEnginePage.LifecycleState'
+    Discarded = ... # type: 'QWebEnginePage.LifecycleState'
+
     class WebAction(int): ...
     NoWebAction = ... # type: 'QWebEnginePage.WebAction'
     Back = ... # type: 'QWebEnginePage.WebAction'
